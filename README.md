@@ -91,6 +91,16 @@ The EC2 instance is prepared with:
 * A systemd service for running the Spring Boot application
 * An Elastic IP address for stable access
 
+## Demo
+
+1. Change the version in the application.
+2. Run `./deploy.sh`.
+3. Verify the new version:
+
+```bash
+curl http://<EC2-IP>:8080/api/version
+```
+
 ## Purpose
 
 The purpose of this project is to demonstrate practical Linux usage by combining:
