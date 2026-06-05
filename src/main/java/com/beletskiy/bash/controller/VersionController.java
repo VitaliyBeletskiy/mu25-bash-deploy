@@ -13,7 +13,7 @@ public class VersionController {
     @GetMapping("/version")
     public Map<String, String> getVersion() {
         Map<String, String> response = new LinkedHashMap<>();
-        response.put("version", "1.1.0");
+        response.put("version", "2.0.0");
         response.put("status", "active");
         return response;
     }
